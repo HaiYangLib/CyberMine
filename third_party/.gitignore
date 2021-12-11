@@ -1,5 +1,0 @@
-*
-!.gitignore
-!glog/get_glog.sh
-!fast_rtps/get_fastrtps.sh
-!poco/get_poco.sh
