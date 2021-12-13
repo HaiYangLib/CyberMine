@@ -1,0 +1,28 @@
+Log file created at: 2021/12/12 09:52:15
+Running on machine: hhy-Yoga-14sITL-2021
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W1212 09:52:15.903885 832139 environment.h:33]  Environment variable [CYBER_PATH] not set, fallback to 
+W1212 09:52:15.903905 832139 scheduler_factory.cc:64]  No sched conf found, use default conf.
+W1212 09:52:15.903919 832139 environment.h:33]  Environment variable [CYBER_PATH] not set, fallback to 
+I1212 09:52:15.904227 832139 init.cc:105]  Register exit handle succ.
+I1212 09:52:15.904743 832142 processor.cc:80]  processor_tid: 832142
+I1212 09:52:15.909564 832146 processor.cc:80]  processor_tid: 832146
+I1212 09:52:15.909582 832144 processor.cc:80]  processor_tid: 832144
+I1212 09:52:15.909600 832143 processor.cc:80]  processor_tid: 832143
+I1212 09:52:15.909569 832147 processor.cc:80]  processor_tid: 832147
+I1212 09:52:15.909582 832148 processor.cc:80]  processor_tid: 832148
+I1212 09:52:15.909633 832145 processor.cc:80]  processor_tid: 832145
+I1212 09:52:15.909569 832151 processor.cc:80]  processor_tid: 832151
+I1212 09:52:15.909679 832152 processor.cc:80]  processor_tid: 832152
+I1212 09:52:15.909691 832157 processor.cc:80]  processor_tid: 832157
+I1212 09:52:15.909703 832155 processor.cc:80]  processor_tid: 832155
+I1212 09:52:15.909708 832150 processor.cc:80]  processor_tid: 832150
+I1212 09:52:15.909735 832149 processor.cc:80]  processor_tid: 832149
+I1212 09:52:15.909747 832156 processor.cc:80]  processor_tid: 832156
+I1212 09:52:15.909754 832153 processor.cc:80]  processor_tid: 832153
+I1212 09:52:15.909766 832154 processor.cc:80]  processor_tid: 832154
+I1212 09:52:15.912963 832139 scheduler.cc:55]  create croutine: listener_channel/chatter
+W1212 09:52:15.912992 832139 environment.h:33]  Environment variable [cyber_trans_perf] not set, fallback to 
+W1212 09:52:15.912998 832139 environment.h:33]  Environment variable [cyber_sched_perf] not set, fallback to 
+W1212 09:52:15.913228 832162 manager.cc:192]  !message::ParseFromString(msg_str, &msg) is not met.
+W1212 09:52:16.122785 832162 manager.cc:192]  !message::ParseFromString(msg_str, &msg) is not met.

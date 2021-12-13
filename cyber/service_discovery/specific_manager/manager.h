@@ -22,15 +22,16 @@
 #include <mutex>
 #include <string>
 
-#include "cyber/base/signal.h"
-#include "cyber/proto/topology_change.pb.h"
-#include "cyber/service_discovery/communication/subscriber_listener.h"
 #include "fastrtps/Domain.h"
 #include "fastrtps/attributes/PublisherAttributes.h"
 #include "fastrtps/attributes/SubscriberAttributes.h"
 #include "fastrtps/participant/Participant.h"
 #include "fastrtps/publisher/Publisher.h"
 #include "fastrtps/subscriber/Subscriber.h"
+
+#include "cyber/base/signal.h"
+#include "cyber/proto/topology_change.pb.h"
+#include "cyber/service_discovery/communication/subscriber_listener.h"
 
 namespace apollo {
 namespace cyber {

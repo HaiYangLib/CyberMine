@@ -54,7 +54,6 @@ bool ModuleController::LoadAll() {
         module_path = common::GetAbsolutePath(work_root, dag_conf);
       }
     }
-
     AINFO << "Start initialize dag: " << module_path;
     if (!LoadModule(module_path)) {
       AERROR << "Failed to load module: " << module_path;
@@ -95,14 +94,14 @@ bool ModuleController::LoadModule(const DagConfig& dag_config) {
 
     for (auto& component : module_config.timer_components()) {
       const std::string& class_name = component.class_name();
-      std::shared_ptr<ComponentBase> base =class_loader_manager_.CreateClassObj<ComponentBase>(class_name);
+      std::shared_ptr<ComponentBase> base =
+          class_loader_manager_.CreateClassObj<ComponentBase>(class_name);
       if (base == nullptr || !base->Initialize(component.config())) {
         return false;
       }
       component_list_.emplace_back(std::move(base));
     }
   }
-  
   return true;
 }
 

@@ -1,0 +1,28 @@
+Log file created at: 2021/12/12 09:56:23
+Running on machine: hhy-Yoga-14sITL-2021
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W1212 09:56:23.452893 832410 environment.h:33]  Environment variable [CYBER_PATH] not set, fallback to 
+W1212 09:56:23.452917 832410 scheduler_factory.cc:64]  No sched conf found, use default conf.
+W1212 09:56:23.452931 832410 environment.h:33]  Environment variable [CYBER_PATH] not set, fallback to 
+I1212 09:56:23.453253 832410 init.cc:105]  Register exit handle succ.
+I1212 09:56:23.461251 832420 processor.cc:80]  processor_tid: 832420
+I1212 09:56:23.461303 832421 processor.cc:80]  processor_tid: 832421
+I1212 09:56:23.461318 832424 processor.cc:80]  processor_tid: 832424
+I1212 09:56:23.461333 832425 processor.cc:80]  processor_tid: 832425
+I1212 09:56:23.461447 832419 processor.cc:80]  processor_tid: 832419
+I1212 09:56:23.461463 832418 processor.cc:80]  processor_tid: 832418
+I1212 09:56:23.461478 832422 processor.cc:80]  processor_tid: 832422
+I1212 09:56:23.461493 832423 processor.cc:80]  processor_tid: 832423
+I1212 09:56:23.461628 832427 processor.cc:80]  processor_tid: 832427
+I1212 09:56:23.461644 832426 processor.cc:80]  processor_tid: 832426
+I1212 09:56:23.461897 832416 processor.cc:80]  processor_tid: 832416
+I1212 09:56:23.461916 832415 processor.cc:80]  processor_tid: 832415
+I1212 09:56:23.461928 832412 processor.cc:80]  processor_tid: 832412
+I1212 09:56:23.464058 832410 scheduler.cc:55]  create croutine: listener_channel/chatter
+W1212 09:56:23.464123 832410 environment.h:33]  Environment variable [cyber_trans_perf] not set, fallback to 
+W1212 09:56:23.464159 832410 environment.h:33]  Environment variable [cyber_sched_perf] not set, fallback to 
+I1212 09:56:23.471879 832413 processor.cc:80]  processor_tid: 832413
+W1212 09:56:23.475556 832432 manager.cc:192]  !message::ParseFromString(msg_str, &msg) is not met.
+I1212 09:56:23.486404 832417 processor.cc:80]  processor_tid: 832417
+I1212 09:56:23.486477 832414 processor.cc:80]  processor_tid: 832414
+W1212 09:56:31.765111 832432 manager.cc:192]  !message::ParseFromString(msg_str, &msg) is not met.

@@ -40,7 +40,8 @@ inline std::string GetEnv(const std::string& var_name,
 inline const std::string WorkRoot() {
   std::string work_root = GetEnv("CYBER_PATH");
   if (work_root.empty()) {
-    work_root = "/apollo/cyber";
+    //work_root = "/apollo/cyber";
+    work_root="/home/hhy/source_dir/cyber_mine/cyber";
   }
   return work_root;
 }

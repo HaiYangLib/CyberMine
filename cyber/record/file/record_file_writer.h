@@ -20,7 +20,6 @@
 #include <google/protobuf/io/zero_copy_stream_impl.h>
 #include <google/protobuf/message.h>
 #include <google/protobuf/text_format.h>
-
 #include <condition_variable>
 #include <fstream>
 #include <memory>
@@ -90,7 +89,7 @@ class RecordFileWriter : public RecordFileBase {
 
  private:
   bool WriteChunk(const ChunkHeader& chunk_header, const ChunkBody& chunk_body);
-  template <typename T>yt
+  template <typename T>
   bool WriteSection(const T& message);
   bool WriteIndex();
   void Flush();

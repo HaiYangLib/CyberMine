@@ -15,7 +15,7 @@
  *****************************************************************************/
 
 #include "cyber/cyber.h"
-#include "cyber/examples/proto/examples.pb.h"
+#include "proto/examples.pb.h"
 
 void MessageCallback(
     const std::shared_ptr<apollo::cyber::examples::proto::Chatter>& msg) {
@@ -32,6 +32,7 @@ int main(int argc, char* argv[]) {
   // create listener node
   auto listener_node = apollo::cyber::CreateNode("listener");
   // create listener
+  std::cout<<"create listener"<<std::endl;
   auto listener =
       listener_node->CreateReader<apollo::cyber::examples::proto::Chatter>(
           "channel/chatter", MessageCallback);

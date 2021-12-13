@@ -1,0 +1,153 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-7985160d7b41d392fefa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				},
+				{
+					"build" : "test",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-test-Debug-451c0598f41488bb20b9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "test",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"build" : "test/timer_component_example",
+					"jsonFile" : "directory-test.timer_component_example-Debug-5d3122c70c124a49a212.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "test/timer_component_example",
+					"targetIndexes" : 
+					[
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "cyber_mine",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cyber_mine::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cyber_mine-Debug-389239d0e5fe814363af.json",
+					"name" : "cyber_mine",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cyber_monitor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cyber_monitor-Debug-c25b2d84f0bc55277122.json",
+					"name" : "cyber_monitor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cyber_recorder::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cyber_recorder-Debug-473f49214b55dfa2636c.json",
+					"name" : "cyber_recorder",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mainboard::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mainboard-Debug-5c1760e3c0c55d4fb991.json",
+					"name" : "mainboard",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_listen::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_listen-Debug-3ea3eaaa5a82c7ff0e50.json",
+					"name" : "test_listen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_talk::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_talk-Debug-774207a03fa8638b96c6.json",
+					"name" : "test_talk",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "timer_component_example::@b077687611ac67b76b27",
+					"jsonFile" : "target-timer_component_example-Debug-3500ae39cd0fabb819d3.json",
+					"name" : "timer_component_example",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/hhy/source_dir/cyber_mine/cmake-build-debug",
+		"source" : "/home/hhy/source_dir/cyber_mine"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

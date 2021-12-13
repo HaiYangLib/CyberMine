@@ -7,7 +7,7 @@ message ChoreographyTask {
   optional int32 processor = 2;
   optional uint32 prio = 3 [default = 1];
 }
- 
+
 message ChoreographyConf {
   optional uint32 choreography_processor_num = 1;
   optional string choreography_affinity = 2;

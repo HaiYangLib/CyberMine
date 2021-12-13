@@ -1,0 +1,23 @@
+Log file created at: 2021/12/12 22:52:40
+Running on machine: hhy-Yoga-14sITL-2021
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W1212 22:52:40.849822 1115829 environment.h:33]  Environment variable [CYBER_PATH] not set, fallback to 
+W1212 22:52:40.849906 1115829 scheduler_factory.cc:64]  No sched conf found, use default conf.
+W1212 22:52:40.849958 1115829 environment.h:33]  Environment variable [CYBER_PATH] not set, fallback to 
+I1212 22:52:40.850416 1115831 processor.cc:80]  processor_tid: 1115831
+I1212 22:52:40.850478 1115832 processor.cc:80]  processor_tid: 1115832
+I1212 22:52:40.850510 1115833 processor.cc:80]  processor_tid: 1115833
+I1212 22:52:40.850533 1115834 processor.cc:80]  processor_tid: 1115834
+I1212 22:52:40.850569 1115835 processor.cc:80]  processor_tid: 1115835
+I1212 22:52:40.850600 1115836 processor.cc:80]  processor_tid: 1115836
+I1212 22:52:40.850621 1115837 processor.cc:80]  processor_tid: 1115837
+I1212 22:52:40.850668 1115838 processor.cc:80]  processor_tid: 1115838
+I1212 22:52:40.850677 1115839 processor.cc:80]  processor_tid: 1115839
+I1212 22:52:40.850706 1115840 processor.cc:80]  processor_tid: 1115840
+I1212 22:52:40.850729 1115841 processor.cc:80]  processor_tid: 1115841
+I1212 22:52:40.850751 1115842 processor.cc:80]  processor_tid: 1115842
+I1212 22:52:40.850775 1115843 processor.cc:80]  processor_tid: 1115843
+I1212 22:52:40.850796 1115844 processor.cc:80]  processor_tid: 1115844
+I1212 22:52:40.850824 1115845 processor.cc:80]  processor_tid: 1115845
+I1212 22:52:40.850840 1115846 processor.cc:80]  processor_tid: 1115846
+I1212 22:52:40.850885 1115829 init.cc:105]  Register exit handle succ.

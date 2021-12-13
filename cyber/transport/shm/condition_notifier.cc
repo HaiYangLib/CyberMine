@@ -82,7 +82,7 @@ bool ConditionNotifier::Listen(int timeout_ms, ReadableInfo* info) {
   int timeout_us = timeout_ms * 1000;
   while (!is_shutdown_.load()) {
     uint64_t seq = indicator_->next_seq.load();
-    if (seq != next_seq_) {//next_seq_< seq
+    if (seq != next_seq_) {
       auto idx = next_seq_ % kBufLength;
       if (indicator_->seqs[idx] == next_seq_) {
         *info = indicator_->infos[idx];

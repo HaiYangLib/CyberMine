@@ -20,8 +20,9 @@
 #include <memory>
 #include <mutex>
 #include <string>
-#include <vector>
 #include <functional>
+#include <vector>
+
 #include "cyber/class_loader/class_loader_register_macro.h"
 
 namespace apollo {

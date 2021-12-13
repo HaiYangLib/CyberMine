@@ -15,7 +15,7 @@
  *****************************************************************************/
 
 #include "cyber/cyber.h"
-#include "cyber/examples/proto/examples.pb.h"
+#include "proto/examples.pb.h"
 #include "cyber/time/rate.h"
 #include "cyber/time/time.h"
 
@@ -24,6 +24,7 @@ using apollo::cyber::Time;
 using apollo::cyber::examples::proto::Chatter;
 
 int main(int argc, char *argv[]) {
+  std::cout<<"begin test"<<std::endl;
   // init cyber framework
   apollo::cyber::Init(argv[0]);
   // create talker node
@@ -39,9 +40,11 @@ int main(int argc, char *argv[]) {
     msg->set_lidar_timestamp(Time::Now().ToNanosecond());
     msg->set_seq(seq++);
     msg->set_content("Hello, apollo!");
+
     talker->Write(msg);
     AINFO << "talker sent a message!";
     std::cout<<"loop talker"<<std::endl;
+    std::cout<<msg->DebugString()<<std::endl;
     rate.Sleep();
   }
   return 0;

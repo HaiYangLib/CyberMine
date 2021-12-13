@@ -23,7 +23,6 @@
 #include "fastrtps/attributes/PublisherAttributes.h"
 #include "fastrtps/attributes/SubscriberAttributes.h"
 
-
 namespace apollo {
 namespace cyber {
 namespace transport {

@@ -14,6 +14,7 @@
  * limitations under the License.
  *****************************************************************************/
 
+
 .globl ctx_swap
 .type  ctx_swap, @function
 ctx_swap:

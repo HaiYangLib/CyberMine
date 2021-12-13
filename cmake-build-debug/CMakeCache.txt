@@ -20,6 +20,32 @@ CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
+//ASM compiler
+CMAKE_ASM_COMPILER:FILEPATH=/usr/bin/cc
+
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_ASM_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar
+
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_ASM_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib
+
+//Flags used by the ASM compiler during all build types.
+CMAKE_ASM_FLAGS:STRING=
+
+//Flags used by the ASM compiler during DEBUG builds.
+CMAKE_ASM_FLAGS_DEBUG:STRING=-g
+
+//Flags used by the ASM compiler during MINSIZEREL builds.
+CMAKE_ASM_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
+
+//Flags used by the ASM compiler during RELEASE builds.
+CMAKE_ASM_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+
+//Flags used by the ASM compiler during RELWITHDEBINFO builds.
+CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
+
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=Debug
@@ -35,7 +61,7 @@ CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-9
 // for the GCC compiler
 CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-9
 
-CMAKE_CXX_FLAGS:STRING= -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG
+CMAKE_CXX_FLAGS:STRING= -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++11 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG -std=c++14 -O0 -DNDEBUG
 
 //Flags used by the CXX compiler during DEBUG builds.
 CMAKE_CXX_FLAGS_DEBUG:STRING=-g
@@ -206,31 +232,19 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-Project_BINARY_DIR:STATIC=/home/hhy/source_dir/cyber_mine/cmake-build-debug
-
-//Value Computed by CMake
-Project_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-Project_SOURCE_DIR:STATIC=/home/hhy/source_dir/cyber_mine
-
-//Value Computed by CMake
-cm_BINARY_DIR:STATIC=/home/hhy/source_dir/cyber_mine/cmake-build-debug
-
-//Value Computed by CMake
-cm_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-cm_SOURCE_DIR:STATIC=/home/hhy/source_dir/cyber_mine
-
-//Value Computed by CMake
 cyber_mine_BINARY_DIR:STATIC=/home/hhy/source_dir/cyber_mine/cmake-build-debug
 
 //Value Computed by CMake
 cyber_mine_IS_TOP_LEVEL:STATIC=ON
 
+//Dependencies for the target
+cyber_mine_LIB_DEPENDS:STATIC=general;protobuf;general;fastcdr;general;fastrtps;general;gflags;general;glog;general;PocoFoundation;general;uuid;general;atomic;
+
 //Value Computed by CMake
 cyber_mine_SOURCE_DIR:STATIC=/home/hhy/source_dir/cyber_mine
+
+//Dependencies for the target
+timer_component_example_LIB_DEPENDS:STATIC=general;cyber_mine;
 
 
 ########################
@@ -241,6 +255,23 @@ cyber_mine_SOURCE_DIR:STATIC=/home/hhy/source_dir/cyber_mine
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_COMPILER
+CMAKE_ASM_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_COMPILER_AR
+CMAKE_ASM_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_COMPILER_RANLIB
+CMAKE_ASM_COMPILER_RANLIB-ADVANCED:INTERNAL=1
+CMAKE_ASM_COMPILER_WORKS:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS
+CMAKE_ASM_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS_DEBUG
+CMAKE_ASM_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS_MINSIZEREL
+CMAKE_ASM_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS_RELEASE
+CMAKE_ASM_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS_RELWITHDEBINFO
+CMAKE_ASM_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
 CMAKE_CACHEFILE_DIR:INTERNAL=/home/hhy/source_dir/cyber_mine/cmake-build-debug
 //Major version of cmake used to create the current loaded cache
@@ -333,7 +364,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

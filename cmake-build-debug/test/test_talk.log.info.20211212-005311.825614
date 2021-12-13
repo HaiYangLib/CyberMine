@@ -1,0 +1,147 @@
+Log file created at: 2021/12/12 00:53:11
+Running on machine: hhy-Yoga-14sITL-2021
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W1212 00:53:11.522236 825614 environment.h:33]  Environment variable [CYBER_PATH] not set, fallback to 
+W1212 00:53:11.522269 825614 scheduler_factory.cc:64]  No sched conf found, use default conf.
+W1212 00:53:11.522282 825614 environment.h:33]  Environment variable [CYBER_PATH] not set, fallback to 
+I1212 00:53:11.522406 825632 processor.cc:80]  processor_tid: 825632
+I1212 00:53:11.522456 825634 processor.cc:80]  processor_tid: 825634
+I1212 00:53:11.522738 825614 init.cc:105]  Register exit handle succ.
+I1212 00:53:11.523205 825644 processor.cc:80]  processor_tid: 825644
+I1212 00:53:11.523243 825643 processor.cc:80]  processor_tid: 825643
+I1212 00:53:11.523277 825639 processor.cc:80]  processor_tid: 825639
+I1212 00:53:11.523466 825638 processor.cc:80]  processor_tid: 825638
+I1212 00:53:11.525249 825645 processor.cc:80]  processor_tid: 825645
+W1212 00:53:11.527869 825614 environment.h:33]  Environment variable [cyber_trans_perf] not set, fallback to 
+W1212 00:53:11.527894 825614 environment.h:33]  Environment variable [cyber_sched_perf] not set, fallback to 
+I1212 00:53:11.527902 825614 talker.cc:44]  talker sent a message!
+W1212 00:53:11.528720 825652 manager.cc:192]  !message::ParseFromString(msg_str, &msg) is not met.
+I1212 00:53:11.529762 825641 processor.cc:80]  processor_tid: 825641
+I1212 00:53:11.529799 825642 processor.cc:80]  processor_tid: 825642
+I1212 00:53:11.531029 825633 processor.cc:80]  processor_tid: 825633
+I1212 00:53:11.531055 825635 processor.cc:80]  processor_tid: 825635
+I1212 00:53:11.531075 825636 processor.cc:80]  processor_tid: 825636
+I1212 00:53:11.532006 825640 processor.cc:80]  processor_tid: 825640
+I1212 00:53:11.532052 825637 processor.cc:80]  processor_tid: 825637
+I1212 00:53:11.543331 825646 processor.cc:80]  processor_tid: 825646
+I1212 00:53:11.544911 825647 processor.cc:80]  processor_tid: 825647
+I1212 00:53:12.533596 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:13.527941 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:14.527945 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:15.527940 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:16.527956 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:17.527937 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:18.528033 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:19.527957 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:20.527940 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:21.527946 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:22.527953 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:23.527943 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:24.527951 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:25.527956 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:26.527935 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:27.527954 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:28.527946 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:29.527936 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:30.527932 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:31.527943 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:32.527949 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:33.527935 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:34.527956 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:35.531466 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:36.527937 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:37.527942 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:38.527967 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:39.527948 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:40.527937 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:41.527938 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:42.528012 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:43.527983 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:44.527969 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:45.527941 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:46.528009 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:47.527945 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:48.527956 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:49.527951 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:50.527949 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:51.527957 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:52.527979 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:53.527936 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:54.527947 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:55.527952 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:56.527940 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:57.527945 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:58.527947 825614 talker.cc:44]  talker sent a message!
+I1212 00:53:59.527940 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:00.527974 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:01.527957 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:02.534449 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:03.527940 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:04.527958 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:05.527961 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:06.527951 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:07.527951 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:08.527948 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:09.527946 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:10.528775 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:11.527949 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:12.527952 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:13.527945 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:14.527940 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:15.527951 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:16.527957 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:17.527958 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:18.527940 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:19.527949 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:20.527947 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:21.527941 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:22.527967 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:23.527951 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:24.527937 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:25.527942 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:26.527943 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:27.527941 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:28.527963 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:29.527951 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:30.527945 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:31.527940 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:32.527941 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:33.528445 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:34.527940 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:35.527958 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:36.527937 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:37.529639 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:38.527946 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:39.527951 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:40.528370 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:41.527945 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:42.527953 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:43.527941 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:44.527943 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:45.527958 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:46.527938 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:47.527948 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:48.527951 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:49.527961 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:50.527952 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:51.527953 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:52.527945 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:53.527953 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:54.527954 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:55.527951 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:56.527974 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:57.527943 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:58.527966 825614 talker.cc:44]  talker sent a message!
+I1212 00:54:59.528035 825614 talker.cc:44]  talker sent a message!
+I1212 00:55:00.527957 825614 talker.cc:44]  talker sent a message!
+I1212 00:55:01.527952 825614 talker.cc:44]  talker sent a message!
+I1212 00:55:02.527951 825614 talker.cc:44]  talker sent a message!
+I1212 00:55:03.527941 825614 talker.cc:44]  talker sent a message!
+I1212 00:55:04.527940 825614 talker.cc:44]  talker sent a message!
+I1212 00:55:05.527945 825614 talker.cc:44]  talker sent a message!
+I1212 00:55:06.527964 825614 talker.cc:44]  talker sent a message!
+I1212 00:55:07.527956 825614 talker.cc:44]  talker sent a message!
+I1212 00:55:08.527943 825614 talker.cc:44]  talker sent a message!
+I1212 00:55:09.527942 825614 talker.cc:44]  talker sent a message!
+I1212 00:55:10.527946 825614 talker.cc:44]  talker sent a message!
+I1212 00:55:11.527952 825614 talker.cc:44]  talker sent a message!

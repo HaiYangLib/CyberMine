@@ -1,12 +1,16 @@
 # ==============================================================================
 # -- Get GLOG and compile it with libc++ --------------------------------------
 # ==============================================================================
-CXX_TAG=c8
-export CC=/usr/bin/clang-8
-export CXX=/usr/bin/clang++-8
+#CXX_TAG=c8
+#export CC=/usr/bin/clang-8
+#export CXX=/usr/bin/clang++-8
+
+CXX_TAG=gcc
+export CC=/usr/bin/gcc
+export CXX=/usr/bin/g++
 
 # GFLAG
-GFLAG_VERSION=v2.2.2
+GFLAG_VERSION=v2.2.0
 GFLAG_BASENAME=gflag-${GFLAG_VERSION}-${CXX_TAG}
 
 GFLAG_LIBCXX_INCLUDE=${PWD}/${GFLAG_BASENAME}-libcxx-install/include
@@ -22,7 +26,7 @@ build_gfalg() {
         ${GFLAG_BASENAME}-libcxx-build ${GFLAG_BASENAME}-libstdcxx-build \
         ${GFLAG_BASENAME}-libcxx-install ${GFLAG_BASENAME}-libstdcxx-install
 
-    if [ -d ${GFLAG}-source ]; then
+    if [ -d ${GFLAG_BASENAME}-source ]; then
         echo "${GFLAG_BASENAME}-source already existence"
     else
         echo "====================Retrieving GFLAG.=============================="
@@ -36,7 +40,8 @@ build_gfalg() {
     pushd ${GFLAG_BASENAME}-libstdcxx-build >/dev/null
 
     cmake -G "Ninja" \
-        -DCMAKE_CXX_FLAGS="-std=c++14" \
+        -DCMAKE_CXX_FLAGS="-std=c++11" \
+        -DBUILD_SHARED_LIBS=true \
         -DCMAKE_INSTALL_PREFIX="../${GFLAG_BASENAME}-libstdcxx-install" \
         ../${GFLAG_BASENAME}-source
 
@@ -44,14 +49,13 @@ build_gfalg() {
 
     ninja install
 
-    rm -Rf ${GFLAG_BASENAME}-libcxx-build ${GFLAG_BASENAME}-libstdcxx-build
-
     popd >/dev/null
+    rm -Rf ${GFLAG_BASENAME}-libcxx-build ${GFLAG_BASENAME}-libstdcxx-build
 
 }
 
 # GLOG
-GLOG_VERSION=v0.5.0
+GLOG_VERSION=v0.3.5
 GLOG_BASENAME=glog-${GLOG_VERSION}-${CXX_TAG}
 
 GLOG_LIBCXX_INCLUDE=${PWD}/${GLOG_BASENAME}-libcxx-install/include
@@ -67,7 +71,7 @@ build_glog() {
         ${GLOG_BASENAME}-libcxx-build ${GLOG_BASENAME}-libstdcxx-build \
         ${GLOG_BASENAME}-libcxx-install ${GLOG_BASENAME}-libstdcxx-install
 
-    if [ -d ${GLOG}-source ]; then
+    if [ -d ${GLOG_BASENAME}-source ]; then
         echo "${GLOG_BASENAME}-source already existence"
     else
         echo "====================Retrieving GLOG.=============================="
@@ -82,7 +86,9 @@ build_glog() {
     pushd ${GLOG_BASENAME}-libstdcxx-build >/dev/null
 
     cmake -G "Ninja" \
-        -DCMAKE_CXX_FLAGS="-std=c++14" \
+        -DCMAKE_CXX_FLAGS="-std=c++11" \
+        -DBUILD_SHARED_LIBS=true \
+        -DWITH_GFLAGS=OFF \
         -DCMAKE_INSTALL_PREFIX="../${GLOG_BASENAME}-libstdcxx-install" \
         ../${GLOG_BASENAME}-source
 
@@ -90,8 +96,8 @@ build_glog() {
 
     ninja install
 
-    rm -Rf ${GLOG_BASENAME}-libcxx-build ${GLOG_BASENAME}-libstdcxx-build
     popd >/dev/null
+    rm -Rf ${GLOG_BASENAME}-libcxx-build ${GLOG_BASENAME}-libstdcxx-build
 
 }
 

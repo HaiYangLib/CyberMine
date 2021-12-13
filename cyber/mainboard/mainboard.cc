@@ -20,6 +20,7 @@
 #include "cyber/mainboard/module_argument.h"
 #include "cyber/mainboard/module_controller.h"
 #include "cyber/state.h"
+
 #include "gflags/gflags.h"
 
 using apollo::cyber::mainboard::ModuleArgument;

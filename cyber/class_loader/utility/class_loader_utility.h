@@ -18,7 +18,6 @@
 #define CYBER_CLASS_LOADER_UTILITY_CLASS_LOADER_UTILITY_H_
 
 #include <Poco/SharedLibrary.h>
-
 #include <cassert>
 #include <cstdio>
 #include <map>
@@ -115,7 +114,8 @@ template <typename Base>
 std::vector<std::string> GetValidClassNames(ClassLoader* loader) {
   std::lock_guard<std::recursive_mutex> lck(GetClassFactoryMapMapMutex());
 
-  ClassClassFactoryMap& factoryMap =GetClassFactoryMapByBaseClass(typeid(Base).name());
+  ClassClassFactoryMap& factoryMap =
+      GetClassFactoryMapByBaseClass(typeid(Base).name());
   std::vector<std::string> classes;
   for (auto& class_factory : factoryMap) {
     AbstractClassFactoryBase* factory = class_factory.second;

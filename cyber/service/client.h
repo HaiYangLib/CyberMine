@@ -223,7 +223,7 @@ bool Client<Request, Response>::Init() {
 template <typename Request, typename Response>
 typename Client<Request, Response>::SharedResponse
 Client<Request, Response>::SendRequest(SharedRequest request,
-                                       const std::chrono::seconds& timeout_s) { 
+                                       const std::chrono::seconds& timeout_s) {
   if (!IsInit()) {
     return nullptr;
   }

@@ -92,8 +92,7 @@ ClassFactoryVector GetAllClassFactoryObjects(
   return all_class_factory_objs;
 }
 
-ClassFactoryVector
-GetAllClassFactoryObjects() {  //得到所有的AbstractClassFactoryBase*
+ClassFactoryVector GetAllClassFactoryObjects() {
   std::lock_guard<std::recursive_mutex> lck(GetClassFactoryMapMapMutex());
 
   ClassFactoryVector all_class_factory_objs;
@@ -195,8 +194,7 @@ bool IsLibraryLoaded(const std::string& library_path,
 }
 
 bool LoadLibrary(const std::string& library_path, ClassLoader* loader) {
-  if (IsLibraryLoadedByAnybody(
-          library_path)) {  // 已经存在于LibpathPocolibVector
+  if (IsLibraryLoadedByAnybody(library_path)) {
     AINFO << "lib has been loaded by others,only attach to class factory obj."
           << library_path;
     ClassFactoryVector lib_class_factory_objs =
@@ -207,7 +205,6 @@ bool LoadLibrary(const std::string& library_path, ClassLoader* loader) {
     return true;
   }
 
-  // using PocoLibraryPtr = std::shared_ptr<Poco::SharedLibrary>;
   PocoLibraryPtr poco_library = nullptr;
   static std::recursive_mutex loader_mutex;
   {

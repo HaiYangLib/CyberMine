@@ -1,0 +1,41 @@
+Log file created at: 2021/12/12 15:14:33
+Running on machine: hhy-Yoga-14sITL-2021
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W1212 15:14:33.617504 866588 environment.h:33]  Environment variable [CYBER_PATH] not set, fallback to 
+W1212 15:14:33.617533 866588 scheduler_factory.cc:64]  No sched conf found, use default conf.
+W1212 15:14:33.617552 866588 environment.h:33]  Environment variable [CYBER_PATH] not set, fallback to 
+I1212 15:14:33.617980 866588 init.cc:105]  Register exit handle succ.
+I1212 15:14:33.618122 866606 processor.cc:80]  processor_tid: 866606
+I1212 15:14:33.618156 866603 processor.cc:80]  processor_tid: 866603
+I1212 15:14:33.618173 866599 processor.cc:80]  processor_tid: 866599
+I1212 15:14:33.618584 866598 processor.cc:80]  processor_tid: 866598
+I1212 15:14:33.619042 866592 processor.cc:80]  processor_tid: 866592
+I1212 15:14:33.619580 866595 processor.cc:80]  processor_tid: 866595
+I1212 15:14:33.619596 866591 processor.cc:80]  processor_tid: 866591
+I1212 15:14:33.619591 866605 processor.cc:80]  processor_tid: 866605
+I1212 15:14:33.619649 866600 processor.cc:80]  processor_tid: 866600
+I1212 15:14:33.619659 866593 processor.cc:80]  processor_tid: 866593
+I1212 15:14:33.619676 866601 processor.cc:80]  processor_tid: 866601
+I1212 15:14:33.619693 866596 processor.cc:80]  processor_tid: 866596
+I1212 15:14:33.619719 866597 processor.cc:80]  processor_tid: 866597
+I1212 15:14:33.619733 866602 processor.cc:80]  processor_tid: 866602
+I1212 15:14:33.619751 866604 processor.cc:80]  processor_tid: 866604
+I1212 15:14:33.619750 866594 processor.cc:80]  processor_tid: 866594
+W1212 15:14:33.624202 866588 environment.h:33]  Environment variable [cyber_trans_perf] not set, fallback to 
+W1212 15:14:33.624259 866588 environment.h:33]  Environment variable [cyber_sched_perf] not set, fallback to 
+I1212 15:14:33.624284 866588 talker.cc:45]  talker sent a message!
+W1212 15:14:33.631297 866611 manager.cc:192]  !message::ParseFromString(msg_str, &msg) is not met.
+I1212 15:14:34.624363 866588 talker.cc:45]  talker sent a message!
+I1212 15:14:35.630607 866588 talker.cc:45]  talker sent a message!
+I1212 15:14:36.624280 866588 talker.cc:45]  talker sent a message!
+I1212 15:14:37.624297 866588 talker.cc:45]  talker sent a message!
+I1212 15:14:38.624294 866588 talker.cc:45]  talker sent a message!
+I1212 15:14:39.624275 866588 talker.cc:45]  talker sent a message!
+I1212 15:14:40.624290 866588 talker.cc:45]  talker sent a message!
+I1212 15:14:41.624300 866588 talker.cc:45]  talker sent a message!
+I1212 15:14:42.624421 866588 talker.cc:45]  talker sent a message!
+I1212 15:14:43.624330 866588 talker.cc:45]  talker sent a message!
+I1212 15:14:44.631001 866588 talker.cc:45]  talker sent a message!
+I1212 15:14:45.624269 866588 talker.cc:45]  talker sent a message!
+I1212 15:14:46.624300 866588 talker.cc:45]  talker sent a message!
+I1212 15:14:47.624307 866588 talker.cc:45]  talker sent a message!

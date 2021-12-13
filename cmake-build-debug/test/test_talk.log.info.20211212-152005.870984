@@ -1,0 +1,38 @@
+Log file created at: 2021/12/12 15:20:05
+Running on machine: hhy-Yoga-14sITL-2021
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W1212 15:20:05.403316 870984 environment.h:33]  Environment variable [CYBER_PATH] not set, fallback to 
+W1212 15:20:05.403358 870984 scheduler_factory.cc:64]  No sched conf found, use default conf.
+W1212 15:20:05.403378 870984 environment.h:33]  Environment variable [CYBER_PATH] not set, fallback to 
+I1212 15:20:05.403549 870988 processor.cc:80]  processor_tid: 870988
+I1212 15:20:05.403575 870989 processor.cc:80]  processor_tid: 870989
+I1212 15:20:05.403626 870991 processor.cc:80]  processor_tid: 870991
+I1212 15:20:05.403653 870992 processor.cc:80]  processor_tid: 870992
+I1212 15:20:05.403684 870993 processor.cc:80]  processor_tid: 870993
+I1212 15:20:05.403734 870994 processor.cc:80]  processor_tid: 870994
+I1212 15:20:05.403746 870995 processor.cc:80]  processor_tid: 870995
+I1212 15:20:05.403806 870996 processor.cc:80]  processor_tid: 870996
+I1212 15:20:05.403831 870997 processor.cc:80]  processor_tid: 870997
+I1212 15:20:05.403832 870998 processor.cc:80]  processor_tid: 870998
+I1212 15:20:05.403856 870999 processor.cc:80]  processor_tid: 870999
+I1212 15:20:05.403867 871000 processor.cc:80]  processor_tid: 871000
+I1212 15:20:05.403888 870984 init.cc:105]  Register exit handle succ.
+I1212 15:20:05.403889 871001 processor.cc:80]  processor_tid: 871001
+I1212 15:20:05.407038 870990 processor.cc:80]  processor_tid: 870990
+W1212 15:20:05.409513 870984 environment.h:33]  Environment variable [cyber_trans_perf] not set, fallback to 
+W1212 15:20:05.409538 870984 environment.h:33]  Environment variable [cyber_sched_perf] not set, fallback to 
+I1212 15:20:05.409548 870984 talker.cc:45]  talker sent a message!
+W1212 15:20:05.409740 871006 manager.cc:192]  !message::ParseFromString(msg_str, &msg) is not met.
+I1212 15:20:05.411056 870986 processor.cc:80]  processor_tid: 870986
+I1212 15:20:05.411067 870987 processor.cc:80]  processor_tid: 870987
+I1212 15:20:06.409632 870984 talker.cc:45]  talker sent a message!
+I1212 15:20:07.409596 870984 talker.cc:45]  talker sent a message!
+I1212 15:20:08.409525 870984 talker.cc:45]  talker sent a message!
+I1212 15:20:09.409615 870984 talker.cc:45]  talker sent a message!
+I1212 15:20:10.409639 870984 talker.cc:45]  talker sent a message!
+I1212 15:20:11.409569 870984 talker.cc:45]  talker sent a message!
+I1212 15:20:12.409612 870984 talker.cc:45]  talker sent a message!
+I1212 15:20:13.409619 870984 talker.cc:45]  talker sent a message!
+I1212 15:20:14.409583 870984 talker.cc:45]  talker sent a message!
+I1212 15:20:15.409610 870984 talker.cc:45]  talker sent a message!
+I1212 15:20:16.409602 870984 talker.cc:45]  talker sent a message!

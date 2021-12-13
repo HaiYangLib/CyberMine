@@ -19,6 +19,7 @@
 
 #include <memory>
 #include <utility>
+#include <type_traits>
 
 #include "cyber/common/global_data.h"
 #include "cyber/common/log.h"
