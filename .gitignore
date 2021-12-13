@@ -35,6 +35,6 @@
 .clwb/
 .idea/
 .vscode/
-cmake_build_debug/
+cmake-build-debug/
 build/
 
